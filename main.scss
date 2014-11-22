@@ -1,0 +1,46 @@
+//sass trial
+//variables
+$color-main: #09fa78;
+$color-ligth: #099960; 
+//nesting
+body{
+	backgroung: $color-main;
+}
+nav{
+	ul{
+	list-decoration:none;
+	}
+	li{
+	display:inline;
+	}
+	a{
+	color: $color-ligth;
+	}
+}
+//imports
+@import 'partial';
+
+//mixin
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box{
+	@include border-radius(90px);
+}
+
+
+
+//inheritance
+.message{
+	border: 2px;
+	padding-top:10px;
+	padding-left:10px;
+}
+.error{
+	@extend .message;
+	margin:30px;
+}
