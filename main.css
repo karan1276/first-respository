@@ -1,0 +1,30 @@
+body {
+  backgroung: #09fa78; }
+
+nav ul {
+  list-decoration: none; }
+nav li {
+  display: inline; }
+nav a {
+  color: #099960; }
+
+div {
+  color: #09fa78;
+  display: inline;
+  border: 2px solid #099960; }
+
+.box {
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  border-radius: 90px; }
+
+.message, .error {
+  border: 2px;
+  padding-top: 10px;
+  padding-left: 10px; }
+
+.error {
+  margin: 30px; }
+
+/*# sourceMappingURL=main.css.map */
